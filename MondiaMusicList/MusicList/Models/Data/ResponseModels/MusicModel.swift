@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import UIKit
 
 struct Music {
     var id: Int?

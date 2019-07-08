@@ -36,6 +36,12 @@
 		04281D1022D31E4C00EB22DE /* MusicInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0E22D31E4C00EB22DE /* MusicInfoTableViewCell.swift */; };
 		04281D1122D31E4C00EB22DE /* MusicInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281D0F22D31E4C00EB22DE /* MusicInfoTableViewCell.xib */; };
 		04281D1422D323DE00EB22DE /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D1322D323DE00EB22DE /* Statistics.swift */; };
+		0428BFAC22D3B461003DE309 /* AuthorizationMusicBackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA122D3B461003DE309 /* AuthorizationMusicBackendManager.swift */; };
+		0428BFAD22D3B461003DE309 /* BaseAuthorizationMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA322D3B461003DE309 /* BaseAuthorizationMusicRequest.swift */; };
+		0428BFAE22D3B461003DE309 /* AuthorizationMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA422D3B461003DE309 /* AuthorizationMusicRequest.swift */; };
+		0428BFAF22D3B461003DE309 /* AuthorizationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA622D3B461003DE309 /* AuthorizationToken.swift */; };
+		0428BFB422D3BCC9003DE309 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */; };
+		0428BFB622D3E5A2003DE309 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +76,12 @@
 		04281D0E22D31E4C00EB22DE /* MusicInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfoTableViewCell.swift; sourceTree = "<group>"; };
 		04281D0F22D31E4C00EB22DE /* MusicInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicInfoTableViewCell.xib; sourceTree = "<group>"; };
 		04281D1322D323DE00EB22DE /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		0428BFA122D3B461003DE309 /* AuthorizationMusicBackendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationMusicBackendManager.swift; sourceTree = "<group>"; };
+		0428BFA322D3B461003DE309 /* BaseAuthorizationMusicRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAuthorizationMusicRequest.swift; sourceTree = "<group>"; };
+		0428BFA422D3B461003DE309 /* AuthorizationMusicRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationMusicRequest.swift; sourceTree = "<group>"; };
+		0428BFA622D3B461003DE309 /* AuthorizationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationToken.swift; sourceTree = "<group>"; };
+		0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
+		0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,7 @@
 				04281CBB22D2DA0100EB22DE /* CustomComponents */,
 				04281CBD22D2DA0100EB22DE /* Extensions */,
 				04281CDA22D2DA0200EB22DE /* Helpers */,
+				0428BF9922D3B412003DE309 /* Authentication */,
 				04281CC422D2DA0100EB22DE /* MusicList */,
 				04281CFE22D31BBE00EB22DE /* MusicDetails */,
 				04281CA122D2D95800EB22DE /* AppDelegate.swift */,
@@ -177,7 +190,6 @@
 		04281CCA22D2DA0100EB22DE /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				04281CCB22D2DA0100EB22DE /* ErrorModels */,
 				04281CCD22D2DA0100EB22DE /* Source */,
 				04281CD322D2DA0100EB22DE /* ResponseModels */,
 				04281CD522D2DA0100EB22DE /* BasicModels */,
@@ -243,6 +255,7 @@
 				04281CDB22D2DA0200EB22DE /* ReachabilityHelper.swift */,
 				04281CDC22D2DA0200EB22DE /* HelperDateFormatter.swift */,
 				04281CDD22D2DA0200EB22DE /* ResposeResultStatus.swift */,
+				0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -352,6 +365,75 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		0428BF9922D3B412003DE309 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				0428BF9B22D3B42D003DE309 /* Models */,
+				0428BF9A22D3B424003DE309 /* ViewModels */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0428BF9A22D3B424003DE309 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0428BF9B22D3B42D003DE309 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0428BF9C22D3B461003DE309 /* Data */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0428BF9C22D3B461003DE309 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04281CCB22D2DA0100EB22DE /* ErrorModels */,
+				0428BF9F22D3B461003DE309 /* Source */,
+				0428BFA522D3B461003DE309 /* ResponseModels */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0428BF9F22D3B461003DE309 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0428BFA022D3B461003DE309 /* BackendManager */,
+				0428BFA222D3B461003DE309 /* Requests */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0428BFA022D3B461003DE309 /* BackendManager */ = {
+			isa = PBXGroup;
+			children = (
+				0428BFA122D3B461003DE309 /* AuthorizationMusicBackendManager.swift */,
+			);
+			path = BackendManager;
+			sourceTree = "<group>";
+		};
+		0428BFA222D3B461003DE309 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				0428BFA322D3B461003DE309 /* BaseAuthorizationMusicRequest.swift */,
+				0428BFA422D3B461003DE309 /* AuthorizationMusicRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		0428BFA522D3B461003DE309 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				0428BFA622D3B461003DE309 /* AuthorizationToken.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,22 +511,28 @@
 			files = (
 				04281D1022D31E4C00EB22DE /* MusicInfoTableViewCell.swift in Sources */,
 				04281CF222D2DA0200EB22DE /* HelperDateFormatter.swift in Sources */,
+				0428BFAF22D3B461003DE309 /* AuthorizationToken.swift in Sources */,
 				04281D1422D323DE00EB22DE /* Statistics.swift in Sources */,
 				04281CEF22D2DA0200EB22DE /* MusicTableViewCell.swift in Sources */,
 				04281CE822D2DA0200EB22DE /* ErrorModel.swift in Sources */,
 				04281D0622D31C0300EB22DE /* MusicDetailsViewController.swift in Sources */,
 				04281CF322D2DA0200EB22DE /* ResposeResultStatus.swift in Sources */,
 				04281CEA22D2DA0200EB22DE /* MusicRequest.swift in Sources */,
+				0428BFAD22D3B461003DE309 /* BaseAuthorizationMusicRequest.swift in Sources */,
 				04281CFD22D2FF3600EB22DE /* CoverImage.swift in Sources */,
 				04281D0C22D31C7C00EB22DE /* MusicCoverImageTableViewCell.swift in Sources */,
 				04281CF122D2DA0200EB22DE /* ReachabilityHelper.swift in Sources */,
 				04281CE122D2DA0200EB22DE /* CustomImageView.swift in Sources */,
 				04281CE722D2DA0200EB22DE /* MusicListViewController.swift in Sources */,
+				0428BFAE22D3B461003DE309 /* AuthorizationMusicRequest.swift in Sources */,
 				04281CE322D2DA0200EB22DE /* StringExtension.swift in Sources */,
 				04281CE422D2DA0200EB22DE /* Constants.swift in Sources */,
+				0428BFB422D3BCC9003DE309 /* AuthorizationViewModel.swift in Sources */,
 				04281CEC22D2DA0200EB22DE /* Artist.swift in Sources */,
+				0428BFB622D3E5A2003DE309 /* UserDefaultsHelper.swift in Sources */,
 				04281CE922D2DA0200EB22DE /* MoviesBackendManager.swift in Sources */,
 				04281CEB22D2DA0200EB22DE /* BaseMusicRequest.swift in Sources */,
+				0428BFAC22D3B461003DE309 /* AuthorizationMusicBackendManager.swift in Sources */,
 				04281CED22D2DA0200EB22DE /* MusicModel.swift in Sources */,
 				04281CA222D2D95800EB22DE /* AppDelegate.swift in Sources */,
 				04281CEE22D2DA0200EB22DE /* BaseMusicListViewController.swift in Sources */,
