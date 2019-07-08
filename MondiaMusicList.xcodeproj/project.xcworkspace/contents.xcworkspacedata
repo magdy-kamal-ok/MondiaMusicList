@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ModiaMusicList.xcodeproj">
+      location = "self:/Users/mac/Desktop/Projects/TestProjects/ModiaMusicList/MondiaMusicList.xcodeproj">
    </FileRef>
 </Workspace>

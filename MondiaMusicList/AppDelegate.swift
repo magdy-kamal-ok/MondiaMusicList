@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ModiaMusicList
+//  MondiaMusicList
 //
 //  Created by mac on 7/8/19.
 //  Copyright © 2019 OwnProjects. All rights reserved.
@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        openMusicViewController()
         return true
     }
 
@@ -44,3 +45,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate
+{
+    func openMusicViewController()
+    {
+        
+        let musicListViewController  = MusicListViewController(nibName: "MusicListViewController", bundle: nil)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        let navigationBar = UINavigationController.init(rootViewController: musicListViewController)
+        self.window?.rootViewController = navigationBar
+        window?.backgroundColor = UIColor.white
+        self.window?.makeKeyAndVisible()
+        
+        
+    }
+}
