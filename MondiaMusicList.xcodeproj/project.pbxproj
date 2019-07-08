@@ -29,6 +29,13 @@
 		04281CF222D2DA0200EB22DE /* HelperDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CDC22D2DA0200EB22DE /* HelperDateFormatter.swift */; };
 		04281CF322D2DA0200EB22DE /* ResposeResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CDD22D2DA0200EB22DE /* ResposeResultStatus.swift */; };
 		04281CFD22D2FF3600EB22DE /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CFC22D2FF3600EB22DE /* CoverImage.swift */; };
+		04281D0622D31C0300EB22DE /* MusicDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0422D31C0300EB22DE /* MusicDetailsViewController.swift */; };
+		04281D0722D31C0300EB22DE /* MusicDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281D0522D31C0300EB22DE /* MusicDetailsViewController.xib */; };
+		04281D0C22D31C7C00EB22DE /* MusicCoverImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0A22D31C7C00EB22DE /* MusicCoverImageTableViewCell.swift */; };
+		04281D0D22D31C7C00EB22DE /* MusicCoverImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281D0B22D31C7C00EB22DE /* MusicCoverImageTableViewCell.xib */; };
+		04281D1022D31E4C00EB22DE /* MusicInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0E22D31E4C00EB22DE /* MusicInfoTableViewCell.swift */; };
+		04281D1122D31E4C00EB22DE /* MusicInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281D0F22D31E4C00EB22DE /* MusicInfoTableViewCell.xib */; };
+		04281D1422D323DE00EB22DE /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D1322D323DE00EB22DE /* Statistics.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +63,13 @@
 		04281CDC22D2DA0200EB22DE /* HelperDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperDateFormatter.swift; sourceTree = "<group>"; };
 		04281CDD22D2DA0200EB22DE /* ResposeResultStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResposeResultStatus.swift; sourceTree = "<group>"; };
 		04281CFC22D2FF3600EB22DE /* CoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImage.swift; sourceTree = "<group>"; };
+		04281D0422D31C0300EB22DE /* MusicDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDetailsViewController.swift; sourceTree = "<group>"; };
+		04281D0522D31C0300EB22DE /* MusicDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicDetailsViewController.xib; sourceTree = "<group>"; };
+		04281D0A22D31C7C00EB22DE /* MusicCoverImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCoverImageTableViewCell.swift; sourceTree = "<group>"; };
+		04281D0B22D31C7C00EB22DE /* MusicCoverImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCoverImageTableViewCell.xib; sourceTree = "<group>"; };
+		04281D0E22D31E4C00EB22DE /* MusicInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInfoTableViewCell.swift; sourceTree = "<group>"; };
+		04281D0F22D31E4C00EB22DE /* MusicInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicInfoTableViewCell.xib; sourceTree = "<group>"; };
+		04281D1322D323DE00EB22DE /* Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +107,7 @@
 				04281CBD22D2DA0100EB22DE /* Extensions */,
 				04281CDA22D2DA0200EB22DE /* Helpers */,
 				04281CC422D2DA0100EB22DE /* MusicList */,
+				04281CFE22D31BBE00EB22DE /* MusicDetails */,
 				04281CA122D2D95800EB22DE /* AppDelegate.swift */,
 				04281CA822D2D95A00EB22DE /* Assets.xcassets */,
 				04281CAA22D2D95A00EB22DE /* LaunchScreen.storyboard */,
@@ -217,6 +232,7 @@
 			children = (
 				04281CD422D2DA0100EB22DE /* Artist.swift */,
 				04281CFC22D2FF3600EB22DE /* CoverImage.swift */,
+				04281D1322D323DE00EB22DE /* Statistics.swift */,
 			);
 			path = BasicModels;
 			sourceTree = "<group>";
@@ -283,6 +299,59 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		04281CFE22D31BBE00EB22DE /* MusicDetails */ = {
+			isa = PBXGroup;
+			children = (
+				04281CFF22D31BCC00EB22DE /* Views */,
+			);
+			path = MusicDetails;
+			sourceTree = "<group>";
+		};
+		04281CFF22D31BCC00EB22DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04281D0122D31BD900EB22DE /* Controlles */,
+				04281D0022D31BD200EB22DE /* Xibs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04281D0022D31BD200EB22DE /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				04281D0922D31C2B00EB22DE /* Cells */,
+				04281D0522D31C0300EB22DE /* MusicDetailsViewController.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		04281D0122D31BD900EB22DE /* Controlles */ = {
+			isa = PBXGroup;
+			children = (
+				04281D0822D31C2400EB22DE /* CellClasses */,
+				04281D0422D31C0300EB22DE /* MusicDetailsViewController.swift */,
+			);
+			path = Controlles;
+			sourceTree = "<group>";
+		};
+		04281D0822D31C2400EB22DE /* CellClasses */ = {
+			isa = PBXGroup;
+			children = (
+				04281D0A22D31C7C00EB22DE /* MusicCoverImageTableViewCell.swift */,
+				04281D0E22D31E4C00EB22DE /* MusicInfoTableViewCell.swift */,
+			);
+			path = CellClasses;
+			sourceTree = "<group>";
+		};
+		04281D0922D31C2B00EB22DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				04281D0B22D31C7C00EB22DE /* MusicCoverImageTableViewCell.xib */,
+				04281D0F22D31E4C00EB22DE /* MusicInfoTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,9 +411,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04281CAC22D2D95A00EB22DE /* LaunchScreen.storyboard in Resources */,
+				04281D0722D31C0300EB22DE /* MusicDetailsViewController.xib in Resources */,
+				04281D0D22D31C7C00EB22DE /* MusicCoverImageTableViewCell.xib in Resources */,
 				04281CA922D2D95A00EB22DE /* Assets.xcassets in Resources */,
 				04281CF022D2DA0200EB22DE /* MusicListViewController.xib in Resources */,
 				04281CE522D2DA0200EB22DE /* MusicTableViewCell.xib in Resources */,
+				04281D1122D31E4C00EB22DE /* MusicInfoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,12 +427,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04281D1022D31E4C00EB22DE /* MusicInfoTableViewCell.swift in Sources */,
 				04281CF222D2DA0200EB22DE /* HelperDateFormatter.swift in Sources */,
+				04281D1422D323DE00EB22DE /* Statistics.swift in Sources */,
 				04281CEF22D2DA0200EB22DE /* MusicTableViewCell.swift in Sources */,
 				04281CE822D2DA0200EB22DE /* ErrorModel.swift in Sources */,
+				04281D0622D31C0300EB22DE /* MusicDetailsViewController.swift in Sources */,
 				04281CF322D2DA0200EB22DE /* ResposeResultStatus.swift in Sources */,
 				04281CEA22D2DA0200EB22DE /* MusicRequest.swift in Sources */,
 				04281CFD22D2FF3600EB22DE /* CoverImage.swift in Sources */,
+				04281D0C22D31C7C00EB22DE /* MusicCoverImageTableViewCell.swift in Sources */,
 				04281CF122D2DA0200EB22DE /* ReachabilityHelper.swift in Sources */,
 				04281CE122D2DA0200EB22DE /* CustomImageView.swift in Sources */,
 				04281CE722D2DA0200EB22DE /* MusicListViewController.swift in Sources */,

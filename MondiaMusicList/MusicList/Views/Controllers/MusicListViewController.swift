@@ -21,6 +21,7 @@ class MusicListViewController: BaseMusicListViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
         self.MusicTableView.reloadData()
         self.title = Constants.Music_LIST_TITLE.localized
     }
@@ -52,13 +53,14 @@ class MusicListViewController: BaseMusicListViewController {
         return musicTableViewCell
     }
     
-    override func handleOpenAddNewMusicw() {
-//        DispatchQueue.main.async {
-//            let newMusicViewController = NewMusicViewController.init(nibName: "NewMusicViewController", bundle: nil)
-//            self.navigationController?.pushViewController(newMusicViewController, animated: true)
-//        }
-
+    override func didSelectCellAt(indexPath: IndexPath) {
+        let musicDetailsViewController = MusicDetailsViewController.init(nibName: "MusicDetailsViewController", bundle: nil) 
+        let musicModel = self.musicViewModel?.allMusicArray[indexPath.row] as! Music
+        musicDetailsViewController.musicModel = musicModel
+        self.navigationController?.pushViewController(musicDetailsViewController, animated: true)
+        
     }
+
 }
 extension MusicListViewController:MusicViewControllerDelegate
 {

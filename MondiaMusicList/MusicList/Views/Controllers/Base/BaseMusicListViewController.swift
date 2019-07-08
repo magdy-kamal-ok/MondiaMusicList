@@ -29,8 +29,8 @@ class BaseMusicListViewController: UIViewController {
         setupTableDataSource()
         setupCellNibName()
         setupCellNibRegistration()
-        setupAddButtonToNavigation()
         setAccessiblityIdentifiers()
+        hideProgressLoaderIndicator()
         
     }
     
@@ -45,21 +45,7 @@ class BaseMusicListViewController: UIViewController {
         self.loadingIndicator.accessibilityIdentifier = Constants.LOADING_INDICATOR_IDENTIFIER
 
     }
-    // MARK: right navbar button
-    private func setupAddButtonToNavigation() {
-        let addBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(openAddNewMusic))
-        addBarButton.accessibilityIdentifier = Constants.ADD_NEW_VIDEO_BTN_IDENTIFIER
-        navigationItem.rightBarButtonItem = addBarButton
-    }
-    
-    //MARK:- Music Details Action
-    @objc func openAddNewMusic()   {
-       handleOpenAddNewMusicw()
-    }
-    
-    func handleOpenAddNewMusicw() {
-        // override this when you need to handleOpenAddNewMusicw
-    }
+
     
     // MARK: - Table view
     
@@ -113,7 +99,7 @@ class BaseMusicListViewController: UIViewController {
     
     public func showProgressLoaderIndicator(){
         DispatchQueue.main.async {
-            self.loadingIndicator?.isHidden = false
+//            self.loadingIndicator?.isHidden = false
             self.loadingIndicator?.startAnimating()
         }
       
@@ -124,7 +110,7 @@ class BaseMusicListViewController: UIViewController {
     
     public func hideProgressLoaderIndicator(){
         DispatchQueue.main.async {
-            self.loadingIndicator?.isHidden = true
+            //self.loadingIndicator?.isHidden = true
             self.loadingIndicator?.stopAnimating()
         }
     }
@@ -168,6 +154,15 @@ extension BaseMusicListViewController : UITableViewDelegate, UITableViewDataSour
     @objc func getCustomCell(_ tableView: UITableView, customCell cusotmCell:UITableViewCell , cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         return cusotmCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didSelectCellAt(indexPath: indexPath)
+    }
+    
+    @objc func didSelectCellAt(indexPath: IndexPath)  {
+        
+        
     }
 }
 
