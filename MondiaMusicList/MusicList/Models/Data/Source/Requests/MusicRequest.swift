@@ -9,28 +9,28 @@
 import Foundation
 
 protocol MusicRequestDelegate: NSObjectProtocol {
-    
+
     func requestWillSend()
-    
+
     func requestSucceeded(data: [Music]?)
-    
+
     func requestFailed(error: ErrorModel?)
 }
 
 class MusicRequest: BaseMusicRequest<Music, ErrorModel> {
-    
+
     weak var delegate: MusicRequestDelegate?
-    
+
     public override init() {
         super.init()
     }
-    
-    public func getMusicData(searchBy:String){
+
+    public func getMusicData(searchBy: String) {
         delegate?.requestWillSend()
-        let apiUrl = Constants.apiUrl + searchBy
+        let apiUrl = Constants.searchApiUrl + searchBy
         getMusicRequsetData(from: apiUrl)
     }
-    
+
     override func onRequestSuccess(data: [Music]?) {
         delegate?.requestSucceeded(data: data)
     }
@@ -38,5 +38,5 @@ class MusicRequest: BaseMusicRequest<Music, ErrorModel> {
         delegate?.requestFailed(error: error)
     }
 
-    
+
 }

@@ -16,18 +16,18 @@ struct Music {
     var label: String?
     var duration: Int?
     var numberOfTracks: Int?
-    var artist:Artist?
-    var coverImage:CoverImage?
-    var statistics:Statistics?
+    var artist: Artist?
+    var coverImage: CoverImage?
+    var statistics: Statistics?
 
 }
 
 extension Music: Decodable {
-    
+
     enum MusicCodingKeys: String, CodingKey {
-        case id         = "id"
-        case type       = "type"
-        case title      = "title"
+        case id = "id"
+        case type = "type"
+        case title = "title"
         case publishingDate = "publishingDate"
         case artist = "mainArtist"
         case cover = "cover"
@@ -37,19 +37,19 @@ extension Music: Decodable {
         case statistics = "statistics"
 
     }
-    
-    
+
+
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: MusicCodingKeys.self)
-        
+
         id = try? values.decode(Int.self, forKey: .id)
         type = try? values.decode(String.self, forKey: .type)
-        title =  try? values.decode(String.self, forKey: .title)
+        title = try? values.decode(String.self, forKey: .title)
         publishingDate = try? values.decode(String.self, forKey: .publishingDate)
         label = try? values.decode(String.self, forKey: .label)
 
-        duration =  try? values.decode(Int.self, forKey: .duration)
-        numberOfTracks =  try? values.decode(Int.self, forKey: .numberOfTracks)
+        duration = try? values.decode(Int.self, forKey: .duration)
+        numberOfTracks = try? values.decode(Int.self, forKey: .numberOfTracks)
 
         artist = try? values.decode(Artist.self, forKey: .artist)
         coverImage = try? values.decode(CoverImage.self, forKey: .cover)

@@ -9,24 +9,29 @@
 import Foundation
 import UIKit
 
-protocol AuthorizationViewModelDelegate : class{
+protocol AuthorizationViewModelDelegate: class {
+    func showLoader()
+
     func finishRequestingAccessToken()
+
+    func authorizeFailed(error: ErrorModel?)
+
 }
 class AuthorizationViewModel: NSObject {
-    
+
     //
     //MARK: Parameters
     //
     private var backendManager = AuthorizationMusicBackendManager()
-    weak var authorizationViewModelDelegate:AuthorizationViewModelDelegate?
-    
+    weak var authorizationViewModelDelegate: AuthorizationViewModelDelegate?
+
     //
     // MARK: Initializer
     //
     override init() {
         super.init()
     }
-    convenience init(delegate:AuthorizationViewModelDelegate) {
+    convenience init(delegate: AuthorizationViewModelDelegate) {
         self.init()
         self.authorizationViewModelDelegate = delegate
     }
@@ -35,24 +40,26 @@ class AuthorizationViewModel: NSObject {
     //MARK: Network Request
     //
     public func getAuthorizationMusicToken() {
-        
+
         backendManager.getAuthorizationMusicToken(delegate: self)
     }
     //
     // MARK: Cancel Network Request
     //
+
+
     func checkTokenValidation() -> Bool
     {
-        if let auth = UserDefaultsHelper.getAuthorizeToken(key: Constants.authorizeResponseKey), let timeInterval  = UserDefaultsHelper.getStringFromUserDefaults(key: Constants.timeofAuthorizationKey)
-            
+        if let auth = UserDefaultsHelper.getAuthorizeToken(key: Constants.authorizeResponseKey), let timeInterval = UserDefaultsHelper.getStringFromUserDefaults(key: Constants.timeofAuthorizationKey)
+
         {
             let expireAuth = Double(auth.expiresIn!)!
-            
+
             let savedTimeInterval = Double(timeInterval)!
             let currnetTimeInterval = Date.timeIntervalSinceReferenceDate
-            
-            
-            if currnetTimeInterval - savedTimeInterval < (expireAuth-100)
+
+
+            if currnetTimeInterval - savedTimeInterval < (expireAuth - 100)
             {
                 return true
             }
@@ -61,12 +68,14 @@ class AuthorizationViewModel: NSObject {
                 return false
             }
         }
-         return false
+        return false
     }
-    
+
+    // check if the cached auth key is still valid if not the authviewmodel
+    // will perform call to the server asking foe new one
     func checkAuthorization()
     {
-        
+
         if self.checkTokenValidation()
         {
             self.authorizationViewModelDelegate?.finishRequestingAccessToken()
@@ -76,20 +85,20 @@ class AuthorizationViewModel: NSObject {
             getAuthorizationMusicToken()
         }
     }
-    
-    
+
+
     func cancelMusicDatatRequest() {
         backendManager.cancelMusicDatatRequest()
     }
 
 }
-// MARK: Music request delegate
+// MARK: Authorization request delegate
 
-extension AuthorizationViewModel:AuthorizationMusicRequestDelegate
+extension AuthorizationViewModel: AuthorizationMusicRequestDelegate
 {
 
     func requestWillSend() {
-        
+        self.authorizationViewModelDelegate?.showLoader()
     }
 
     func requestSucceeded(data: AuthorizationToken?) {
@@ -100,14 +109,13 @@ extension AuthorizationViewModel:AuthorizationMusicRequestDelegate
             let timeInterval = String(Date.timeIntervalSinceReferenceDate)
             UserDefaultsHelper.saveStringData(value: timeInterval, key: Constants.timeofAuthorizationKey)
             self.authorizationViewModelDelegate?.finishRequestingAccessToken()
-            
-            
+
+
         }
     }
 
-    func requestFailed(error:ErrorModel?) {
-        
-        self.getAuthorizationMusicToken()
+    func requestFailed(error: ErrorModel?) {
+        self.authorizationViewModelDelegate?.authorizeFailed(error: error)
     }
 
 }

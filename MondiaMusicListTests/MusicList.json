@@ -1,0 +1,785 @@
+[
+    {
+        "id": 3960480,
+        "type": "song",
+        "title": "Testify (Album Version (Explicit))",
+        "publishingDate": "2018-07-28T00:00:00Z",
+        "duration": 166,
+        "mainArtist": {
+            "id": 5846,
+            "name": "Nas"
+        },
+        "statistics": {
+            "popularity": "0.2867",
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 252
+        },
+        "release": {
+            "id": 3960494,
+            "title": "Nas"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 8,
+        "genres": [
+            "Hip Hop"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USUM70821104",
+            "roviId": "MT0009599107",
+            "roviTrackId": "MT0009599107"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/3960494.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/3960494.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/3960494.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/3960494.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/3960494.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/3960494.{suffix}"
+        }
+    },
+    {
+        "id": 2817083,
+        "type": "song",
+        "title": "Verdi: Rigoletto / Act 2 - \"Poiché fosti invano da me maledetto\" - \"Sì, vendetta\"/\"O mio padre\"",
+        "publishingDate": "2005-05-17T00:00:00Z",
+        "duration": 186,
+        "mainArtist": {
+            "id": 458108,
+            "name": "Lorenzo Testi"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 2817079,
+            "title": "Verdi: Rigoletto"
+        },
+        "volumeNumber": 2,
+        "trackNumber": 10,
+        "genres": [
+            "Classic"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "DEF056431016"
+        },
+        "adfunded": false,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/2817079.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/2817079.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2817079.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/2817079.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2817079.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/2817079.{suffix}"
+        }
+    },
+    {
+        "id": 2817086,
+        "type": "song",
+        "title": "Verdi: Rigoletto / Act 1 - \"Questa o quella\" - \"Partite? ... Crudele\" - \"In testa che avete, Signor di Ceprano?\" - \"Gran nuova! Gran nuova!\" - \"Ah, più di Ceprano\"",
+        "publishingDate": "2005-05-17T00:00:00Z",
+        "duration": 424,
+        "mainArtist": {
+            "id": 8542,
+            "name": "Carlo Bergonzi"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 2817079,
+            "title": "Verdi: Rigoletto"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 3,
+        "genres": [
+            "Classic"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "DEF056431023"
+        },
+        "adfunded": false,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/2817079.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/2817079.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2817079.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/2817079.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2817079.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/2817079.{suffix}"
+        }
+    },
+    {
+        "id": 2817092,
+        "type": "song",
+        "title": "Verdi: Rigoletto / Act 1 - Ch'io gli parli (Monterone, Duca, Borsa, Rigoletto, Marullo, Ceprano, Coro)",
+        "publishingDate": "2005-05-17T00:00:00Z",
+        "duration": 277,
+        "mainArtist": {
+            "id": 458108,
+            "name": "Lorenzo Testi"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 2817079,
+            "title": "Verdi: Rigoletto"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 4,
+        "genres": [
+            "Classic"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "DEF056431024"
+        },
+        "adfunded": false,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/2817079.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/2817079.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2817079.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/2817079.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2817079.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/2817079.{suffix}"
+        }
+    },
+    {
+        "id": 458108,
+        "type": "artist",
+        "name": "Lorenzo Testi",
+        "urlBag": {},
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "streamable": true
+    },
+    {
+        "id": 63584090,
+        "type": "song",
+        "title": "Testify To Love",
+        "publishingDate": "2018-08-13T00:00:00Z",
+        "duration": 314,
+        "mainArtist": {
+            "id": 40640,
+            "name": "Avalon"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 63584093,
+            "title": "Karaoke Christian Pop"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 6,
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USSP30350688"
+        },
+        "adfunded": false,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/63584093.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/63584093.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/63584093.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/63584093.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/63584093.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/63584093.{suffix}"
+        }
+    },
+    {
+        "id": 63584086,
+        "type": "song",
+        "title": "Testify To Love",
+        "publishingDate": "2018-08-13T00:00:00Z",
+        "duration": 314,
+        "mainArtist": {
+            "id": 40640,
+            "name": "Avalon"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 63584093,
+            "title": "Karaoke Christian Pop"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 2,
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USSP30350684"
+        },
+        "adfunded": false,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/63584093.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/63584093.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/63584093.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/63584093.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/63584093.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/63584093.{suffix}"
+        }
+    },
+    {
+        "id": 2427328,
+        "type": "song",
+        "title": "A Testa In Giù",
+        "publishingDate": "2007-03-20T00:00:00Z",
+        "duration": 228,
+        "mainArtist": {
+            "id": 24535,
+            "name": "Pino Daniele"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 2427321,
+            "title": "Pino Daniele: The Best Of Platinum"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 22,
+        "genres": [
+            "Pop"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "ITD009500020",
+            "roviId": "MT0027209703",
+            "roviTrackId": "MT0027209703"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/2427321.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/2427321.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2427321.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/2427321.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2427321.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/2427321.{suffix}"
+        }
+    },
+    {
+        "id": 8660610,
+        "type": "song",
+        "title": "Testify (Album Version (Explicit))",
+        "publishingDate": "2010-05-24T00:00:00Z",
+        "duration": 158,
+        "mainArtist": {
+            "id": 1282,
+            "name": "Common"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 8660615,
+            "title": "Go! Common Classics"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 9,
+        "genres": [
+            "Hip Hop"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USMC10500394",
+            "roviId": "MT0036379884",
+            "roviTrackId": "MT0036379884"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/8660615.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/8660615.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/8660615.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/8660615.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/8660615.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/8660615.{suffix}"
+        }
+    },
+    {
+        "id": 782012,
+        "type": "song",
+        "title": "The Testimony",
+        "publishingDate": "2005-09-27T00:00:00Z",
+        "duration": 239,
+        "mainArtist": {
+            "id": 72298,
+            "name": "Mack 10"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 782006,
+            "title": "Hustla's Handbook"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 6,
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USCA20500971",
+            "roviId": "MT0003732414",
+            "roviTrackId": "MT0003732414"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/782006.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/782006.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/782006.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/782006.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/782006.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/782006.{suffix}"
+        }
+    },
+    {
+        "id": 1332696,
+        "type": "song",
+        "title": "This Is Not A Test",
+        "publishingDate": "2006-05-12T00:00:00Z",
+        "duration": 299,
+        "mainArtist": {
+            "id": 115210,
+            "name": "Radio 4"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 1332690,
+            "title": "Enemies Like This"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 6,
+        "genres": [
+            "Alternative"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USCN30600028",
+            "roviId": "MT0035572339",
+            "roviTrackId": "MT0035572339"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/1332690.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/1332690.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/1332690.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/1332690.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/1332690.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/1332690.{suffix}"
+        }
+    },
+    {
+        "id": 3321785,
+        "type": "song",
+        "title": "Testify To Love",
+        "publishingDate": "2008-02-26T00:00:00Z",
+        "duration": 280,
+        "mainArtist": {
+            "id": 40640,
+            "name": "Avalon"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 3321795,
+            "title": "Another Time, Another Place: Timeless Christian Classics"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 15,
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USSP30765560",
+            "roviId": "MT0000807521",
+            "roviTrackId": "MT0000807521"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/3321795.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/3321795.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/3321795.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/3321795.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/3321795.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/3321795.{suffix}"
+        }
+    },
+    {
+        "id": 2001198,
+        "type": "song",
+        "title": "Ho Tutto In Testa Ma Non Riesco A Dirlo",
+        "publishingDate": "2006-12-12T00:00:00Z",
+        "duration": 159,
+        "mainArtist": {
+            "id": 311100,
+            "name": "Afterhours"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 3127327,
+            "title": "Germi"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 8,
+        "genres": [
+            "Alternative"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "ITC530400243",
+            "roviId": "MT0007652580",
+            "roviTrackId": "MT0007652580"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/3127327.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/3127327.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/3127327.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/3127327.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/3127327.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/3127327.{suffix}"
+        }
+    },
+    {
+        "id": 1012342,
+        "type": "release",
+        "title": "Testa Plastica",
+        "publishingDate": "2013-07-10T00:00:00Z",
+        "duration": 2312,
+        "label": "Universal Music Group",
+        "mainArtist": {
+            "id": 116965,
+            "name": "Prozac+"
+        },
+        "mainRelease": true,
+        "streamableTracks": 13,
+        "numberOfTracks": 13,
+        "additionalArtists": [],
+        "genres": [
+            "Alternative"
+        ],
+        "idBag": {
+            "ean": "0724382380856",
+            "upc": "724382380856",
+            "icpn": "00724382380856",
+            "roviId": "MR0001795487",
+            "roviReleaseId": "MR0001795487"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "streamable": true,
+        "partialStreamable": true,
+        "adfunded": false,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/1012342.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/small/1012342",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/1012342.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/big/1012342",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/1012342.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/1012342.{suffix}"
+        },
+        "variousArtists": false
+    },
+    {
+        "id": 827170,
+        "type": "release",
+        "title": "Testify",
+        "publishingDate": "2013-07-10T00:00:00Z",
+        "duration": 2189,
+        "label": "Universal Music Group",
+        "mainArtist": {
+            "id": 101553,
+            "name": "Donald Lawrence & The Tri-City Singers"
+        },
+        "mainRelease": true,
+        "streamableTracks": 5,
+        "numberOfTracks": 5,
+        "additionalArtists": [],
+        "idBag": {
+            "ean": "0724382030553",
+            "upc": "724382030553",
+            "icpn": "00724382030553",
+            "roviId": "MR0000722440",
+            "roviReleaseId": "MR0000722440"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "streamable": true,
+        "partialStreamable": true,
+        "adfunded": false,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/827170.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/small/827170",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/827170.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/big/827170",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/827170.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/827170.{suffix}"
+        },
+        "variousArtists": false
+    },
+    {
+        "id": 1650339,
+        "type": "song",
+        "title": "Test Of Time",
+        "publishingDate": "2003-03-01T00:00:00Z",
+        "duration": 255,
+        "mainArtist": {
+            "id": 269160,
+            "name": "The Crescent"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 1650334,
+            "title": "The Crescent"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 5,
+        "genres": [
+            "Rock"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "GBAAA0200442",
+            "roviId": "MT0015228064",
+            "roviTrackId": "MT0015228064"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/1650334.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/1650334.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/1650334.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/1650334.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/1650334.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/1650334.{suffix}"
+        }
+    },
+    {
+        "id": 2142518,
+        "type": "song",
+        "title": "Il Testamento Del Toro (2001 Digital Remaster)",
+        "publishingDate": "2007-01-30T00:00:00Z",
+        "duration": 365,
+        "mainArtist": {
+            "id": 19638,
+            "name": "Quartetto Cetra"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 2142512,
+            "title": "Made In Italy"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 6,
+        "genres": [
+            "Jazz"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "ITD000100244",
+            "roviId": "MT0035742164",
+            "roviTrackId": "MT0035742164"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/2142512.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/2142512.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2142512.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/2142512.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/2142512.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/2142512.{suffix}"
+        }
+    },
+    {
+        "id": 1012354,
+        "type": "song",
+        "title": "Testa Plastica",
+        "publishingDate": "2003-03-03T00:00:00Z",
+        "duration": 119,
+        "mainArtist": {
+            "id": 116965,
+            "name": "Prozac+"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 1012342,
+            "title": "Testa Plastica"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 12,
+        "genres": [
+            "Alternative"
+        ],
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "ITD009700179",
+            "roviId": "MT0018892882",
+            "roviTrackId": "MT0018892882"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/1012342.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/1012342.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/1012342.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/1012342.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/1012342.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/1012342.{suffix}"
+        }
+    },
+    {
+        "id": 827171,
+        "type": "song",
+        "title": "Testify (Remix)",
+        "publishingDate": "2000-10-24T00:00:00Z",
+        "duration": 567,
+        "mainArtist": {
+            "id": 101553,
+            "name": "Donald Lawrence & The Tri-City Singers"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 827170,
+            "title": "Testify"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 1,
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USEG30052951",
+            "roviId": "MT0002905837",
+            "roviTrackId": "MT0002905837"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/827170.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/827170.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/827170.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/827170.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/827170.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/827170.{suffix}"
+        }
+    },
+    {
+        "id": 827172,
+        "type": "song",
+        "title": "Testify (Remix)",
+        "publishingDate": "2000-10-24T00:00:00Z",
+        "duration": 276,
+        "mainArtist": {
+            "id": 101553,
+            "name": "Donald Lawrence & The Tri-City Singers"
+        },
+        "statistics": {
+            "popularity": 0,
+            "estimatedRecentCount": 0,
+            "estimatedTotalCount": 0
+        },
+        "release": {
+            "id": 827170,
+            "title": "Testify"
+        },
+        "volumeNumber": 1,
+        "trackNumber": 2,
+        "additionalArtists": [],
+        "idBag": {
+            "isrc": "USEG30052952",
+            "roviId": "MT0002549431",
+            "roviTrackId": "MT0002549431"
+        },
+        "adfunded": true,
+        "streamable": true,
+        "bundleOnly": false,
+        "cover": {
+            "tiny": "//staging-placebo.mondiamedia.com/api/fetch/image/article/57x57/827170.jpg",
+            "small": "//staging-placebo.mondiamedia.com/api/fetch/image/article/150x150/827170.jpg",
+            "medium": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/827170.jpg",
+            "large": "//staging-placebo.mondiamedia.com/api/fetch/image/article/600x600/827170.jpg",
+            "default": "//staging-placebo.mondiamedia.com/api/fetch/image/article/300x300/827170.jpg",
+            "template": "//staging-placebo.mondiamedia.com/api/fetch/image/article/{width}x{height}/827170.{suffix}"
+        }
+    }
+]

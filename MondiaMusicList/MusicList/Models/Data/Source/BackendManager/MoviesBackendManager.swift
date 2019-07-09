@@ -9,11 +9,11 @@
 import UIKit
 
 class MusicBackendManager: NSObject {
-    
-    
+
+
     lazy var musicRequest = MusicRequest()
-    
-    public func getMusic(delegate: MusicRequestDelegate, searchBy:String) {
+
+    public func getMusic(delegate: MusicRequestDelegate, searchBy: String) {
         musicRequest.delegate = delegate
         musicRequest.getMusicData(searchBy: searchBy)
     }

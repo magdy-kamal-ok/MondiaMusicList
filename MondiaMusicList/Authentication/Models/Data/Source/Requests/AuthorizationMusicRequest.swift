@@ -9,31 +9,28 @@
 import Foundation
 
 protocol AuthorizationMusicRequestDelegate: NSObjectProtocol {
-    
+
     func requestWillSend()
-    
+
     func requestSucceeded(data: AuthorizationToken?)
-    
+
     func requestFailed(error: ErrorModel?)
 }
 
 class AuthorizationMusicRequest: BaseAuthorizationMusicRequest<AuthorizationToken, ErrorModel> {
-    
+
     weak var delegate: AuthorizationMusicRequestDelegate?
-    
+
     public override init() {
         super.init()
     }
-    
-    deinit {
-        print("a")
-    }
-    public func getAuthorizationToken(){
+
+    public func getAuthorizationToken() {
         delegate?.requestWillSend()
-        let apiUrl = Constants.apiTokenUrl
+        let apiUrl = Constants.authenticationApiUrl
         getAuthorizationMusicToken(from: apiUrl)
     }
-    
+
     override func onRequestSuccess(data: AuthorizationToken?) {
         delegate?.requestSucceeded(data: data)
     }
@@ -41,5 +38,5 @@ class AuthorizationMusicRequest: BaseAuthorizationMusicRequest<AuthorizationToke
         delegate?.requestFailed(error: error)
     }
 
-    
+
 }

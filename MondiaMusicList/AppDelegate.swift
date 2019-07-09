@@ -50,14 +50,14 @@ extension AppDelegate
 {
     func openMusicViewController()
     {
-        
-        let musicListViewController  = MusicListViewController(nibName: "MusicListViewController", bundle: nil)
+
+        let musicListViewController = MusicListViewController(nibName: "MusicListViewController", bundle: nil)
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let navigationBar = UINavigationController.init(rootViewController: musicListViewController)
         self.window?.rootViewController = navigationBar
         window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
-        
-        
+
+
     }
 }

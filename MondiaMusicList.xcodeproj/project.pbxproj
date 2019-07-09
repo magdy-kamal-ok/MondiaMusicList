@@ -43,7 +43,97 @@
 		0428BFB422D3BCC9003DE309 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */; };
 		0428BFB622D3E5A2003DE309 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */; };
 		0429642C22D4049F009E4FA1 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429642B22D4049F009E4FA1 /* UserDefaultsExtension.swift */; };
+		044E090122D4A41E009A27FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044E090022D4A41D009A27FD /* Localizable.strings */; };
+		044E090922D4B1C4009A27FD /* MondiaMusicListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E090822D4B1C4009A27FD /* MondiaMusicListUITests.swift */; };
+		044E091022D4B1EB009A27FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CC322D2DA0100EB22DE /* Constants.swift */; };
+		044E091122D4B1EB009A27FD /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CBC22D2DA0100EB22DE /* CustomImageView.swift */; };
+		044E091222D4B1EB009A27FD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CC122D2DA0100EB22DE /* StringExtension.swift */; };
+		044E091322D4B1EB009A27FD /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429642B22D4049F009E4FA1 /* UserDefaultsExtension.swift */; };
+		044E091422D4B1EB009A27FD /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CDB22D2DA0200EB22DE /* ReachabilityHelper.swift */; };
+		044E091522D4B1EB009A27FD /* HelperDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CDC22D2DA0200EB22DE /* HelperDateFormatter.swift */; };
+		044E091622D4B1EB009A27FD /* ResposeResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CDD22D2DA0200EB22DE /* ResposeResultStatus.swift */; };
+		044E091722D4B1EB009A27FD /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */; };
+		044E091822D4B1EB009A27FD /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CCC22D2DA0100EB22DE /* ErrorModel.swift */; };
+		044E091922D4B1EB009A27FD /* AuthorizationMusicBackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA122D3B461003DE309 /* AuthorizationMusicBackendManager.swift */; };
+		044E091A22D4B1EB009A27FD /* BaseAuthorizationMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA322D3B461003DE309 /* BaseAuthorizationMusicRequest.swift */; };
+		044E091B22D4B1EB009A27FD /* AuthorizationMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA422D3B461003DE309 /* AuthorizationMusicRequest.swift */; };
+		044E091C22D4B1EB009A27FD /* AuthorizationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA622D3B461003DE309 /* AuthorizationToken.swift */; };
+		044E091D22D4B1EB009A27FD /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */; };
+		044E091E22D4B1EB009A27FD /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CC822D2DA0100EB22DE /* MusicListViewController.swift */; };
+		044E091F22D4B1EB009A27FD /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD822D2DA0100EB22DE /* MusicTableViewCell.swift */; };
+		044E092022D4B1EB009A27FD /* BaseMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD722D2DA0100EB22DE /* BaseMusicListViewController.swift */; };
+		044E092122D4B1EB009A27FD /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CC722D2DA0100EB22DE /* MusicViewModel.swift */; };
+		044E092222D4B1EB009A27FD /* MoviesBackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CCF22D2DA0100EB22DE /* MoviesBackendManager.swift */; };
+		044E092322D4B1EB009A27FD /* MusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD122D2DA0100EB22DE /* MusicRequest.swift */; };
+		044E092422D4B1EB009A27FD /* BaseMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD222D2DA0100EB22DE /* BaseMusicRequest.swift */; };
+		044E092522D4B1EB009A27FD /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD622D2DA0100EB22DE /* MusicModel.swift */; };
+		044E092622D4B1EB009A27FD /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD422D2DA0100EB22DE /* Artist.swift */; };
+		044E092722D4B1EB009A27FD /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CFC22D2FF3600EB22DE /* CoverImage.swift */; };
+		044E092822D4B1EB009A27FD /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D1322D323DE00EB22DE /* Statistics.swift */; };
+		044E092922D4B1EB009A27FD /* MusicCoverImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0A22D31C7C00EB22DE /* MusicCoverImageTableViewCell.swift */; };
+		044E092A22D4B1EB009A27FD /* MusicInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0E22D31E4C00EB22DE /* MusicInfoTableViewCell.swift */; };
+		044E092B22D4B1EB009A27FD /* MusicDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0422D31C0300EB22DE /* MusicDetailsViewController.swift */; };
+		044E092C22D4B1EB009A27FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CA122D2D95800EB22DE /* AppDelegate.swift */; };
+		044E092D22D4B202009A27FD /* MusicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281CD922D2DA0100EB22DE /* MusicListViewController.xib */; };
+		044E092E22D4B202009A27FD /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281CC522D2DA0100EB22DE /* MusicTableViewCell.xib */; };
+		044E092F22D4B202009A27FD /* MusicCoverImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281D0B22D31C7C00EB22DE /* MusicCoverImageTableViewCell.xib */; };
+		044E093022D4B202009A27FD /* MusicInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281D0F22D31E4C00EB22DE /* MusicInfoTableViewCell.xib */; };
+		044E093122D4B202009A27FD /* MusicDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04281D0522D31C0300EB22DE /* MusicDetailsViewController.xib */; };
+		044E093222D4B202009A27FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04281CA822D2D95A00EB22DE /* Assets.xcassets */; };
+		044E093322D4B23D009A27FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04281CAA22D2D95A00EB22DE /* LaunchScreen.storyboard */; };
+		044E093422D4B253009A27FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044E090022D4A41D009A27FD /* Localizable.strings */; };
+		044E093C22D4CF77009A27FD /* MondiaMusicDateHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E093B22D4CF77009A27FD /* MondiaMusicDateHelperTests.swift */; };
+		044E094322D4CF88009A27FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CC322D2DA0100EB22DE /* Constants.swift */; };
+		044E094422D4CF88009A27FD /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CBC22D2DA0100EB22DE /* CustomImageView.swift */; };
+		044E094522D4CF88009A27FD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CC122D2DA0100EB22DE /* StringExtension.swift */; };
+		044E094622D4CF88009A27FD /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429642B22D4049F009E4FA1 /* UserDefaultsExtension.swift */; };
+		044E094722D4CF88009A27FD /* ReachabilityHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CDB22D2DA0200EB22DE /* ReachabilityHelper.swift */; };
+		044E094822D4CF88009A27FD /* HelperDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CDC22D2DA0200EB22DE /* HelperDateFormatter.swift */; };
+		044E094922D4CF88009A27FD /* ResposeResultStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CDD22D2DA0200EB22DE /* ResposeResultStatus.swift */; };
+		044E094A22D4CF88009A27FD /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */; };
+		044E094B22D4CF88009A27FD /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CCC22D2DA0100EB22DE /* ErrorModel.swift */; };
+		044E094C22D4CF88009A27FD /* AuthorizationMusicBackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA122D3B461003DE309 /* AuthorizationMusicBackendManager.swift */; };
+		044E094D22D4CF88009A27FD /* BaseAuthorizationMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA322D3B461003DE309 /* BaseAuthorizationMusicRequest.swift */; };
+		044E094E22D4CF88009A27FD /* AuthorizationMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA422D3B461003DE309 /* AuthorizationMusicRequest.swift */; };
+		044E094F22D4CF88009A27FD /* AuthorizationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA622D3B461003DE309 /* AuthorizationToken.swift */; };
+		044E095022D4CF88009A27FD /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */; };
+		044E095122D4CF88009A27FD /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CC822D2DA0100EB22DE /* MusicListViewController.swift */; };
+		044E095222D4CF88009A27FD /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD822D2DA0100EB22DE /* MusicTableViewCell.swift */; };
+		044E095322D4CF88009A27FD /* BaseMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD722D2DA0100EB22DE /* BaseMusicListViewController.swift */; };
+		044E095422D4CF88009A27FD /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CC722D2DA0100EB22DE /* MusicViewModel.swift */; };
+		044E095522D4CF88009A27FD /* MoviesBackendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CCF22D2DA0100EB22DE /* MoviesBackendManager.swift */; };
+		044E095622D4CF88009A27FD /* MusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD122D2DA0100EB22DE /* MusicRequest.swift */; };
+		044E095722D4CF88009A27FD /* BaseMusicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD222D2DA0100EB22DE /* BaseMusicRequest.swift */; };
+		044E095822D4CF88009A27FD /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD622D2DA0100EB22DE /* MusicModel.swift */; };
+		044E095922D4CF88009A27FD /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CD422D2DA0100EB22DE /* Artist.swift */; };
+		044E095A22D4CF88009A27FD /* CoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CFC22D2FF3600EB22DE /* CoverImage.swift */; };
+		044E095B22D4CF88009A27FD /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D1322D323DE00EB22DE /* Statistics.swift */; };
+		044E095C22D4CF88009A27FD /* MusicCoverImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0A22D31C7C00EB22DE /* MusicCoverImageTableViewCell.swift */; };
+		044E095D22D4CF88009A27FD /* MusicInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0E22D31E4C00EB22DE /* MusicInfoTableViewCell.swift */; };
+		044E095E22D4CF88009A27FD /* MusicDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281D0422D31C0300EB22DE /* MusicDetailsViewController.swift */; };
+		044E095F22D4CF88009A27FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04281CA122D2D95800EB22DE /* AppDelegate.swift */; };
+		044E096122D4D055009A27FD /* MondiaMusicCustomImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E096022D4D055009A27FD /* MondiaMusicCustomImageTests.swift */; };
+		044E096322D4D21C009A27FD /* MusicList.json in Resources */ = {isa = PBXBuildFile; fileRef = 044E096222D4D21C009A27FD /* MusicList.json */; };
+		044E096522D4D286009A27FD /* MondiaMusicDecodingModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E096422D4D286009A27FD /* MondiaMusicDecodingModelTests.swift */; };
+		044E096622D4E309009A27FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 044E090022D4A41D009A27FD /* Localizable.strings */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044E090B22D4B1C4009A27FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04281C9622D2D95800EB22DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04281C9D22D2D95800EB22DE;
+			remoteInfo = MondiaMusicList;
+		};
+		044E093E22D4CF77009A27FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04281C9622D2D95800EB22DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04281C9D22D2D95800EB22DE;
+			remoteInfo = MondiaMusicList;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04281C9E22D2D95800EB22DE /* MondiaMusicList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MondiaMusicList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,10 +174,34 @@
 		0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
 		0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		0429642B22D4049F009E4FA1 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		044E090022D4A41D009A27FD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		044E090622D4B1C3009A27FD /* MondiaMusicListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MondiaMusicListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044E090822D4B1C4009A27FD /* MondiaMusicListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondiaMusicListUITests.swift; sourceTree = "<group>"; };
+		044E090A22D4B1C4009A27FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044E093922D4CF77009A27FD /* MondiaMusicListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MondiaMusicListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044E093B22D4CF77009A27FD /* MondiaMusicDateHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondiaMusicDateHelperTests.swift; sourceTree = "<group>"; };
+		044E093D22D4CF77009A27FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044E096022D4D055009A27FD /* MondiaMusicCustomImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondiaMusicCustomImageTests.swift; sourceTree = "<group>"; };
+		044E096222D4D21C009A27FD /* MusicList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MusicList.json; sourceTree = "<group>"; };
+		044E096422D4D286009A27FD /* MondiaMusicDecodingModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondiaMusicDecodingModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04281C9B22D2D95800EB22DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044E090322D4B1C3009A27FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044E093622D4CF77009A27FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -101,6 +215,8 @@
 			isa = PBXGroup;
 			children = (
 				04281CA022D2D95800EB22DE /* MondiaMusicList */,
+				044E090722D4B1C4009A27FD /* MondiaMusicListUITests */,
+				044E093A22D4CF77009A27FD /* MondiaMusicListTests */,
 				04281C9F22D2D95800EB22DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -109,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				04281C9E22D2D95800EB22DE /* MondiaMusicList.app */,
+				044E090622D4B1C3009A27FD /* MondiaMusicListUITests.xctest */,
+				044E093922D4CF77009A27FD /* MondiaMusicListTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +234,7 @@
 		04281CA022D2D95800EB22DE /* MondiaMusicList */ = {
 			isa = PBXGroup;
 			children = (
+				044E08FF22D4A41D009A27FD /* Localized Strings */,
 				04281CC222D2DA0100EB22DE /* Constants */,
 				04281CBB22D2DA0100EB22DE /* CustomComponents */,
 				04281CBD22D2DA0100EB22DE /* Extensions */,
@@ -437,6 +556,35 @@
 			path = ResponseModels;
 			sourceTree = "<group>";
 		};
+		044E08FF22D4A41D009A27FD /* Localized Strings */ = {
+			isa = PBXGroup;
+			children = (
+				044E090022D4A41D009A27FD /* Localizable.strings */,
+			);
+			path = "Localized Strings";
+			sourceTree = "<group>";
+		};
+		044E090722D4B1C4009A27FD /* MondiaMusicListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				044E090822D4B1C4009A27FD /* MondiaMusicListUITests.swift */,
+				044E090A22D4B1C4009A27FD /* Info.plist */,
+			);
+			path = MondiaMusicListUITests;
+			sourceTree = "<group>";
+		};
+		044E093A22D4CF77009A27FD /* MondiaMusicListTests */ = {
+			isa = PBXGroup;
+			children = (
+				044E093B22D4CF77009A27FD /* MondiaMusicDateHelperTests.swift */,
+				044E096022D4D055009A27FD /* MondiaMusicCustomImageTests.swift */,
+				044E096422D4D286009A27FD /* MondiaMusicDecodingModelTests.swift */,
+				044E096222D4D21C009A27FD /* MusicList.json */,
+				044E093D22D4CF77009A27FD /* Info.plist */,
+			);
+			path = MondiaMusicListTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -457,6 +605,42 @@
 			productReference = 04281C9E22D2D95800EB22DE /* MondiaMusicList.app */;
 			productType = "com.apple.product-type.application";
 		};
+		044E090522D4B1C3009A27FD /* MondiaMusicListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044E090D22D4B1C4009A27FD /* Build configuration list for PBXNativeTarget "MondiaMusicListUITests" */;
+			buildPhases = (
+				044E090222D4B1C3009A27FD /* Sources */,
+				044E090322D4B1C3009A27FD /* Frameworks */,
+				044E090422D4B1C3009A27FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044E090C22D4B1C4009A27FD /* PBXTargetDependency */,
+			);
+			name = MondiaMusicListUITests;
+			productName = MondiaMusicListUITests;
+			productReference = 044E090622D4B1C3009A27FD /* MondiaMusicListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		044E093822D4CF77009A27FD /* MondiaMusicListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044E094022D4CF77009A27FD /* Build configuration list for PBXNativeTarget "MondiaMusicListTests" */;
+			buildPhases = (
+				044E093522D4CF77009A27FD /* Sources */,
+				044E093622D4CF77009A27FD /* Frameworks */,
+				044E093722D4CF77009A27FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044E093F22D4CF77009A27FD /* PBXTargetDependency */,
+			);
+			name = MondiaMusicListTests;
+			productName = MondiaMusicListTests;
+			productReference = 044E093922D4CF77009A27FD /* MondiaMusicListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -469,6 +653,14 @@
 				TargetAttributes = {
 					04281C9D22D2D95800EB22DE = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					044E090522D4B1C3009A27FD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 04281C9D22D2D95800EB22DE;
+					};
+					044E093822D4CF77009A27FD = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 04281C9D22D2D95800EB22DE;
 					};
 				};
 			};
@@ -486,6 +678,8 @@
 			projectRoot = "";
 			targets = (
 				04281C9D22D2D95800EB22DE /* MondiaMusicList */,
+				044E090522D4B1C3009A27FD /* MondiaMusicListUITests */,
+				044E093822D4CF77009A27FD /* MondiaMusicListTests */,
 			);
 		};
 /* End PBXProject section */
@@ -500,8 +694,33 @@
 				04281D0D22D31C7C00EB22DE /* MusicCoverImageTableViewCell.xib in Resources */,
 				04281CA922D2D95A00EB22DE /* Assets.xcassets in Resources */,
 				04281CF022D2DA0200EB22DE /* MusicListViewController.xib in Resources */,
+				044E090122D4A41E009A27FD /* Localizable.strings in Resources */,
 				04281CE522D2DA0200EB22DE /* MusicTableViewCell.xib in Resources */,
 				04281D1122D31E4C00EB22DE /* MusicInfoTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044E090422D4B1C3009A27FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044E093422D4B253009A27FD /* Localizable.strings in Resources */,
+				044E093322D4B23D009A27FD /* LaunchScreen.storyboard in Resources */,
+				044E092D22D4B202009A27FD /* MusicListViewController.xib in Resources */,
+				044E092E22D4B202009A27FD /* MusicTableViewCell.xib in Resources */,
+				044E092F22D4B202009A27FD /* MusicCoverImageTableViewCell.xib in Resources */,
+				044E093022D4B202009A27FD /* MusicInfoTableViewCell.xib in Resources */,
+				044E093122D4B202009A27FD /* MusicDetailsViewController.xib in Resources */,
+				044E093222D4B202009A27FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044E093722D4CF77009A27FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044E096622D4E309009A27FD /* Localizable.strings in Resources */,
+				044E096322D4D21C009A27FD /* MusicList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,7 +763,96 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		044E090222D4B1C3009A27FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044E091022D4B1EB009A27FD /* Constants.swift in Sources */,
+				044E091122D4B1EB009A27FD /* CustomImageView.swift in Sources */,
+				044E091222D4B1EB009A27FD /* StringExtension.swift in Sources */,
+				044E091322D4B1EB009A27FD /* UserDefaultsExtension.swift in Sources */,
+				044E091422D4B1EB009A27FD /* ReachabilityHelper.swift in Sources */,
+				044E091522D4B1EB009A27FD /* HelperDateFormatter.swift in Sources */,
+				044E091622D4B1EB009A27FD /* ResposeResultStatus.swift in Sources */,
+				044E091722D4B1EB009A27FD /* UserDefaultsHelper.swift in Sources */,
+				044E091822D4B1EB009A27FD /* ErrorModel.swift in Sources */,
+				044E091922D4B1EB009A27FD /* AuthorizationMusicBackendManager.swift in Sources */,
+				044E091A22D4B1EB009A27FD /* BaseAuthorizationMusicRequest.swift in Sources */,
+				044E091B22D4B1EB009A27FD /* AuthorizationMusicRequest.swift in Sources */,
+				044E091C22D4B1EB009A27FD /* AuthorizationToken.swift in Sources */,
+				044E091D22D4B1EB009A27FD /* AuthorizationViewModel.swift in Sources */,
+				044E091E22D4B1EB009A27FD /* MusicListViewController.swift in Sources */,
+				044E091F22D4B1EB009A27FD /* MusicTableViewCell.swift in Sources */,
+				044E092022D4B1EB009A27FD /* BaseMusicListViewController.swift in Sources */,
+				044E092122D4B1EB009A27FD /* MusicViewModel.swift in Sources */,
+				044E092222D4B1EB009A27FD /* MoviesBackendManager.swift in Sources */,
+				044E092322D4B1EB009A27FD /* MusicRequest.swift in Sources */,
+				044E092422D4B1EB009A27FD /* BaseMusicRequest.swift in Sources */,
+				044E092522D4B1EB009A27FD /* MusicModel.swift in Sources */,
+				044E092622D4B1EB009A27FD /* Artist.swift in Sources */,
+				044E092722D4B1EB009A27FD /* CoverImage.swift in Sources */,
+				044E092822D4B1EB009A27FD /* Statistics.swift in Sources */,
+				044E092922D4B1EB009A27FD /* MusicCoverImageTableViewCell.swift in Sources */,
+				044E092A22D4B1EB009A27FD /* MusicInfoTableViewCell.swift in Sources */,
+				044E092B22D4B1EB009A27FD /* MusicDetailsViewController.swift in Sources */,
+				044E092C22D4B1EB009A27FD /* AppDelegate.swift in Sources */,
+				044E090922D4B1C4009A27FD /* MondiaMusicListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044E093522D4CF77009A27FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044E094322D4CF88009A27FD /* Constants.swift in Sources */,
+				044E096122D4D055009A27FD /* MondiaMusicCustomImageTests.swift in Sources */,
+				044E094422D4CF88009A27FD /* CustomImageView.swift in Sources */,
+				044E094522D4CF88009A27FD /* StringExtension.swift in Sources */,
+				044E094622D4CF88009A27FD /* UserDefaultsExtension.swift in Sources */,
+				044E094722D4CF88009A27FD /* ReachabilityHelper.swift in Sources */,
+				044E094822D4CF88009A27FD /* HelperDateFormatter.swift in Sources */,
+				044E094922D4CF88009A27FD /* ResposeResultStatus.swift in Sources */,
+				044E094A22D4CF88009A27FD /* UserDefaultsHelper.swift in Sources */,
+				044E094B22D4CF88009A27FD /* ErrorModel.swift in Sources */,
+				044E094C22D4CF88009A27FD /* AuthorizationMusicBackendManager.swift in Sources */,
+				044E094D22D4CF88009A27FD /* BaseAuthorizationMusicRequest.swift in Sources */,
+				044E094E22D4CF88009A27FD /* AuthorizationMusicRequest.swift in Sources */,
+				044E094F22D4CF88009A27FD /* AuthorizationToken.swift in Sources */,
+				044E095022D4CF88009A27FD /* AuthorizationViewModel.swift in Sources */,
+				044E095122D4CF88009A27FD /* MusicListViewController.swift in Sources */,
+				044E095222D4CF88009A27FD /* MusicTableViewCell.swift in Sources */,
+				044E095322D4CF88009A27FD /* BaseMusicListViewController.swift in Sources */,
+				044E095422D4CF88009A27FD /* MusicViewModel.swift in Sources */,
+				044E095522D4CF88009A27FD /* MoviesBackendManager.swift in Sources */,
+				044E095622D4CF88009A27FD /* MusicRequest.swift in Sources */,
+				044E095722D4CF88009A27FD /* BaseMusicRequest.swift in Sources */,
+				044E095822D4CF88009A27FD /* MusicModel.swift in Sources */,
+				044E095922D4CF88009A27FD /* Artist.swift in Sources */,
+				044E096522D4D286009A27FD /* MondiaMusicDecodingModelTests.swift in Sources */,
+				044E095A22D4CF88009A27FD /* CoverImage.swift in Sources */,
+				044E095B22D4CF88009A27FD /* Statistics.swift in Sources */,
+				044E095C22D4CF88009A27FD /* MusicCoverImageTableViewCell.swift in Sources */,
+				044E095D22D4CF88009A27FD /* MusicInfoTableViewCell.swift in Sources */,
+				044E095E22D4CF88009A27FD /* MusicDetailsViewController.swift in Sources */,
+				044E095F22D4CF88009A27FD /* AppDelegate.swift in Sources */,
+				044E093C22D4CF77009A27FD /* MondiaMusicDateHelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044E090C22D4B1C4009A27FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04281C9D22D2D95800EB22DE /* MondiaMusicList */;
+			targetProxy = 044E090B22D4B1C4009A27FD /* PBXContainerItemProxy */;
+		};
+		044E093F22D4CF77009A27FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04281C9D22D2D95800EB22DE /* MondiaMusicList */;
+			targetProxy = 044E093E22D4CF77009A27FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		04281CAA22D2D95A00EB22DE /* LaunchScreen.storyboard */ = {
@@ -710,6 +1018,84 @@
 			};
 			name = Release;
 		};
+		044E090E22D4B1C4009A27FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J685J65365;
+				INFOPLIST_FILE = MondiaMusicListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ownprojects.MondiaMusicListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MondiaMusicList;
+			};
+			name = Debug;
+		};
+		044E090F22D4B1C4009A27FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J685J65365;
+				INFOPLIST_FILE = MondiaMusicListUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ownprojects.MondiaMusicListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MondiaMusicList;
+			};
+			name = Release;
+		};
+		044E094122D4CF77009A27FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J685J65365;
+				INFOPLIST_FILE = MondiaMusicListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ownprojects.MondiaMusicListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MondiaMusicList.app/MondiaMusicList";
+			};
+			name = Debug;
+		};
+		044E094222D4CF77009A27FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J685J65365;
+				INFOPLIST_FILE = MondiaMusicListTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ownprojects.MondiaMusicListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MondiaMusicList.app/MondiaMusicList";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -727,6 +1113,24 @@
 			buildConfigurations = (
 				04281CB122D2D95A00EB22DE /* Debug */,
 				04281CB222D2D95A00EB22DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044E090D22D4B1C4009A27FD /* Build configuration list for PBXNativeTarget "MondiaMusicListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044E090E22D4B1C4009A27FD /* Debug */,
+				044E090F22D4B1C4009A27FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044E094022D4CF77009A27FD /* Build configuration list for PBXNativeTarget "MondiaMusicListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044E094122D4CF77009A27FD /* Debug */,
+				044E094222D4CF77009A27FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

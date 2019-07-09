@@ -17,34 +17,47 @@ enum RowType {
     case musicNumberOfTracks
     case musicRate
     case musicDuration
-    
+
 }
-protocol MusicDetailViewDelegate:class {
+protocol MusicDetailViewDelegate: class {
     func didPressBackBtn()
 }
 
- class MusicDetailsViewController: UIViewController {
-        
+class MusicDetailsViewController: UIViewController {
+
     @IBOutlet weak var musicDetailsTableView: UITableView!
-    
-    var musicModel:Music?
+
+    var musicModel: Music?
     var musicDetailsRows = [RowType]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         registerTableViewCells()
         setTableViewDelegates()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = true
         setTableViewSections()
+        addLeftNavbarBackButton()
+        setTitle()
     }
-        
+    func setTitle()
+    {
+        self.title = Constants.musicDetailsTitle.localized
+    }
+    func addLeftNavbarBackButton()
+    {
+
+        let backBarButton = UIBarButtonItem.init(image: UIImage.init(named: "backButton"), style: .plain, target: self, action: #selector(backButtonClick))
+        navigationItem.leftBarButtonItem = backBarButton
+    }
+    @objc func backButtonClick()
+    {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
-    
+
 extension MusicDetailsViewController
 {
     func registerTableViewCells()
@@ -52,7 +65,7 @@ extension MusicDetailsViewController
         musicDetailsTableView.register(UINib.init(nibName: "MusicCoverImageTableViewCell", bundle: nil), forCellReuseIdentifier: "MusicCoverImageTableViewCell")
         musicDetailsTableView.register(UINib.init(nibName: "MusicInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "MusicInfoTableViewCell")
     }
-    
+
     func setTableViewDelegates()
     {
         musicDetailsTableView.dataSource = self
@@ -119,53 +132,46 @@ extension MusicDetailsViewController
                     self.musicDetailsRows.append(.musicDuration)
                 }
             }
-            
+
         }
 
         self.musicDetailsTableView.reloadData()
     }
-    
+
 }
-extension MusicDetailsViewController:MusicDetailViewDelegate
-{
-    
-    func didPressBackBtn() {
-        self.navigationController?.popViewController(animated: true)
-    }
-}
-extension MusicDetailsViewController:UITableViewDelegate, UITableViewDataSource
+
+extension MusicDetailsViewController: UITableViewDelegate, UITableViewDataSource
 {
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.musicDetailsRows.count
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
-        }
-    
+        return 1
+    }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
         let rowType = self.musicDetailsRows[indexPath.section]
         switch rowType {
         case .musicCoverImage:
             return 350
-        default :
+        default:
             return UITableView.automaticDimension
         }
-        
+
     }
 
 
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = self.musicDetailsRows[indexPath.section]
-        
+
         switch row {
         case .musicCoverImage:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MusicCoverImageTableViewCell", for: indexPath) as! MusicCoverImageTableViewCell
-            cell.musicDetailViewDelegate = self
             cell.configureCell(coverImage: self.musicModel?.coverImage)
-            
+
             return cell
         case .musicArtist:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MusicInfoTableViewCell", for: indexPath) as! MusicInfoTableViewCell
@@ -181,7 +187,8 @@ extension MusicDetailsViewController:UITableViewDelegate, UITableViewDataSource
             return cell
         case .musicPublishDate:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MusicInfoTableViewCell", for: indexPath) as! MusicInfoTableViewCell
-            cell.configureCell(title: "Publish Date", desc: (self.musicModel?.publishingDate)!)
+            let formattedStrDate = HelperDateFormatter.formatDate(date: HelperDateFormatter.getDateFromString(dateString: (self.musicModel?.publishingDate)!, format: Constants.yearMonthDayFormat), format: Constants.shortMonthDayYearFormat)
+            cell.configureCell(title: "Publish Date", desc: formattedStrDate)
             return cell
         case .musicNumberOfTracks:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MusicInfoTableViewCell", for: indexPath) as! MusicInfoTableViewCell
@@ -195,8 +202,8 @@ extension MusicDetailsViewController:UITableViewDelegate, UITableViewDataSource
             let cell = tableView.dequeueReusableCell(withIdentifier: "MusicInfoTableViewCell", for: indexPath) as! MusicInfoTableViewCell
             cell.configureCell(title: "Duration", desc: String((self.musicModel?.duration)!))
             return cell
-        
+
         }
     }
-    
+
 }

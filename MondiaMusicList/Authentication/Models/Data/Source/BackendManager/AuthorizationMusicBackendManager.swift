@@ -9,10 +9,10 @@
 import UIKit
 
 class AuthorizationMusicBackendManager: NSObject {
-    
-    
+
+
     lazy var authorizationMusicRequest = AuthorizationMusicRequest()
-    
+
     public func getAuthorizationMusicToken(delegate: AuthorizationMusicRequestDelegate) {
         authorizationMusicRequest.delegate = delegate
         authorizationMusicRequest.getAuthorizationToken()

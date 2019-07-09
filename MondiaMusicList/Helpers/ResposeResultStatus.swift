@@ -15,9 +15,9 @@ enum ResponseStatusEnum
 
 }
 
-enum EncodingStatusEnum:Int
+enum EncodingStatusEnum: Int
 {
     case success = 0
     case failure = 1
-    
+
 }

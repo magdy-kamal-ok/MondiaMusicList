@@ -9,10 +9,10 @@
 import UIKit
 
 class MusicInfoTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var infoLbl: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,10 +23,10 @@ class MusicInfoTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func configureCell(title:String, desc:String)
+    func configureCell(title: String, desc: String)
     {
         self.titleLbl.text = title
         self.infoLbl.text = desc
     }
-    
+
 }

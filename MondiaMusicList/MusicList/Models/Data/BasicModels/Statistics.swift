@@ -9,19 +9,19 @@
 import Foundation
 
 struct Statistics {
-    
+
     var popularity: String? = ""
 }
 
 extension Statistics: Decodable {
-    
+
     private enum StatisticsCodingKeys: String, CodingKey {
         case popularity = "popularity"
     }
-    
+
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: StatisticsCodingKeys.self)
-        popularity  = try? values.decode(String.self, forKey: .popularity)
+        popularity = try? values.decode(String.self, forKey: .popularity)
 
     }
 }

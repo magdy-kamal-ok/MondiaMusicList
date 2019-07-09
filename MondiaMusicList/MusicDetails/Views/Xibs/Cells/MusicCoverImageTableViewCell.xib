@@ -21,18 +21,9 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2it-oC-jAS" customClass="CustomImageView" customModule="MondiaMusicList" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="305.5"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plH-ED-Rkq">
-                        <rect key="frame" x="8" y="16" width="10" height="22"/>
-                        <state key="normal" image="backButton"/>
-                        <connections>
-                            <action selector="backBtnClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OEi-Oj-zht"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="2it-oC-jAS" secondAttribute="trailing" id="2NH-Hk-Rom"/>
-                    <constraint firstItem="plH-ED-Rkq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="9Jd-08-syh"/>
-                    <constraint firstItem="plH-ED-Rkq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="AhX-oc-41C"/>
                     <constraint firstItem="2it-oC-jAS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HJq-IR-ziR"/>
                     <constraint firstAttribute="bottom" secondItem="2it-oC-jAS" secondAttribute="bottom" id="KEI-VA-5hc"/>
                     <constraint firstItem="2it-oC-jAS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="h4X-bx-nhZ"/>
@@ -45,7 +36,4 @@
             <point key="canvasLocation" x="132.80000000000001" y="229.38530734632684"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="backButton" width="10" height="16"/>
-    </resources>
 </document>

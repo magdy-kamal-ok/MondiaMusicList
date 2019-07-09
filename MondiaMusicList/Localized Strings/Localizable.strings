@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  MondiaMusicList
+
+  Created by mac on 7/8/19.
+  Copyright © 2019 OwnProjects. All rights reserved.
+*/
+
+"retry" = "Retry";
+"cancel" = "Cancel";
+"alert" = "Alert";
+"error" = "ERROR";
+"warning" = "Warning";
+"ok" = "Ok";
+"networkConnectionMsg" = "Please verfy that you are connected to Wifi or Cellular";
+"encodingErrorMsg" = "Please try again some error happened";
+"musicList" = "Music List";
+"musicDetails" = "Music Details";

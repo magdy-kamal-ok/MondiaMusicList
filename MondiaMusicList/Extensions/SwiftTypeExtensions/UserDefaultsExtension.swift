@@ -9,7 +9,7 @@
 import Foundation
 
 extension UserDefaults {
-    
+
     func set<T: Encodable>(codable: T, forKey key: String) {
         let encoder = JSONEncoder()
         do {
@@ -20,7 +20,7 @@ extension UserDefaults {
             print("Saving \"\(key)\" failed: \(error)")
         }
     }
-    
+
     func codable<T: Decodable>(_ codable: T.Type, forKey key: String) -> T? {
         guard let jsonString = self.string(forKey: key) else { return nil }
         guard let data = jsonString.data(using: .utf8) else { return nil }
