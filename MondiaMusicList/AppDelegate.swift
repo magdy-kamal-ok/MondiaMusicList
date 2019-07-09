@@ -13,11 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    var authorizationViewModel : AuthorizationViewModel?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        authorizationViewModel = AuthorizationViewModel.init(delegate: self)
-        authorizationViewModel?.checkAuthorization()
+
+        openMusicViewController()
 
         return true
     }
@@ -61,12 +60,4 @@ extension AppDelegate
         
         
     }
-}
-extension AppDelegate:AuthorizationViewModelDelegate
-{
-    func finishRequestingAccessToken() {
-        self.openMusicViewController()
-    }
-    
-    
 }

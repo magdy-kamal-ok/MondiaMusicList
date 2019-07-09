@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MondiaMusicList/Authentication/Models/Data/Source/Requests/BaseAuthorizationMusicRequest.swift"
-            timestampString = "584329519.61877"
+            timestampString = "584329695.713062"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MondiaMusicList/Authentication/Models/Data/Source/Requests/BaseAuthorizationMusicRequest.swift"
-            timestampString = "584329519.618856"
+            timestampString = "584329695.713148"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
@@ -80,6 +80,38 @@
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "deinit"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MondiaMusicList/MusicList/ViewModels/MusicViewModel.swift"
+            timestampString = "584329695.713294"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getMusicData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MondiaMusicList/MusicList/ViewModels/MusicViewModel.swift"
+            timestampString = "584329715.579517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "finishRequestingAccessToken()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
