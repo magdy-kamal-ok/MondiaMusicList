@@ -22,6 +22,7 @@ class HelperDateFormatter: NSObject {
     {
         let dateFromatter = DateFormatter()
         dateFromatter.dateFormat = format
+        dateFromatter.timeZone = TimeZone.init(abbreviation: "EET")
         if let date = dateFromatter.date(from: dateString)
         {
             return date

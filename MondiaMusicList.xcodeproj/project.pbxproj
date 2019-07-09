@@ -42,6 +42,7 @@
 		0428BFAF22D3B461003DE309 /* AuthorizationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFA622D3B461003DE309 /* AuthorizationToken.swift */; };
 		0428BFB422D3BCC9003DE309 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */; };
 		0428BFB622D3E5A2003DE309 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */; };
+		0429642C22D4049F009E4FA1 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0429642B22D4049F009E4FA1 /* UserDefaultsExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		0428BFA622D3B461003DE309 /* AuthorizationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationToken.swift; sourceTree = "<group>"; };
 		0428BFB322D3BCC9003DE309 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
 		0428BFB522D3E5A2003DE309 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		0429642B22D4049F009E4FA1 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				04281CC122D2DA0100EB22DE /* StringExtension.swift */,
+				0429642B22D4049F009E4FA1 /* UserDefaultsExtension.swift */,
 			);
 			path = SwiftTypeExtensions;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 			files = (
 				04281D1022D31E4C00EB22DE /* MusicInfoTableViewCell.swift in Sources */,
 				04281CF222D2DA0200EB22DE /* HelperDateFormatter.swift in Sources */,
+				0429642C22D4049F009E4FA1 /* UserDefaultsExtension.swift in Sources */,
 				0428BFAF22D3B461003DE309 /* AuthorizationToken.swift in Sources */,
 				04281D1422D323DE00EB22DE /* Statistics.swift in Sources */,
 				04281CEF22D2DA0200EB22DE /* MusicTableViewCell.swift in Sources */,

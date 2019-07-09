@@ -12,11 +12,11 @@ class MusicListViewController: BaseMusicListViewController {
     // MARK: Parameters
     var musicViewModel:MusicViewModel?
     // MARK: ViewController lifeCycle
-    let vm = AuthorizationViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        vm.getAuthorizationMusicToken()
+        
         musicViewModel = MusicViewModel.init(delegate: self)
         self.musicSearchBar.delegate = self
         

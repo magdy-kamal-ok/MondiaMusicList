@@ -46,7 +46,6 @@ public class BaseAuthorizationMusicRequest<R: Decodable, E: Decodable>: NSObject
                 {
                     if let response = response as? HTTPURLResponse
                     {
-                        self?.serializeSuccessResponse(from: data)
                         let resultStatus = self?.getStatus(response)
                         switch resultStatus!
                         {

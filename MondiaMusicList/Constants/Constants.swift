@@ -16,6 +16,8 @@ class Constants: NSObject {
     public static let apiUrl = "http://staging-gateway.mondiamedia.com/v2/api/sayt/flat?query="
     public static let apiTokenUrl = "https://staging-gateway.mondiamedia.com/v0/api/gateway/token/client"
     
+    public static let authorizeResponseKey = "AuthorizationKey"
+    public static let timeofAuthorizationKey = "AuthorizationTimeKey"
     
     public static let gateWayKey      = "X-MM-GATEWAY-KEY"
     public static let gateWayKeyValue = "Ge6c853cf-5593-a196-efdb-e3fd7b881eca"

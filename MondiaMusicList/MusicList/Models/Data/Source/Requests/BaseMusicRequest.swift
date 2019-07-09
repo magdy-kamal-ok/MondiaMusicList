@@ -103,8 +103,13 @@ public class BaseMusicRequest<R: Decodable, E: Decodable>: NSObject {
     
     func getAuthorizationValueForHeaders()->String
     {
-     
-        return "Bearer Cc0639d3a-023d-4604-8c64-3dff62878019"
+        if let auth = UserDefaultsHelper.getAuthorizeToken(key: Constants.authorizeResponseKey)
+            
+        {
+            return "Bearer \(auth.accessToken!)"
+        }
+        
+        return ""
     }
     func setErrorResponse(message:String, errorCode:Int)
     {

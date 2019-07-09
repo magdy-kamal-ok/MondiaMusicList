@@ -9,71 +9,79 @@
 import Foundation
 import UIKit
 
+protocol AuthorizationViewModelDelegate : class{
+    func finishRequestingAccessToken()
+}
 class AuthorizationViewModel: NSObject {
     
     //
     //MARK: Parameters
     //
     private var backendManager = AuthorizationMusicBackendManager()
+    weak var authorizationViewModelDelegate:AuthorizationViewModelDelegate?
+    
     //
     // MARK: Initializer
     //
     override init() {
         super.init()
     }
-    
-    convenience init(delegate:MusicViewControllerDelegate) {
+    convenience init(delegate:AuthorizationViewModelDelegate) {
         self.init()
-//        self.musicViewControllerDelegate = delegate
+        self.authorizationViewModelDelegate = delegate
     }
 
     //
     //MARK: Network Request
     //
     public func getAuthorizationMusicToken() {
-        if Reachability.isConnectedToNetwork()
-        {
-            backendManager.getAuthorizationMusicToken(delegate: self)
-        }
-        else
-        {
-            self.showNoInternetConnection()
-        }
+        
+        backendManager.getAuthorizationMusicToken(delegate: self)
     }
     //
     // MARK: Cancel Network Request
     //
+    func checkTokenValidation() -> Bool
+    {
+        if let auth = UserDefaultsHelper.getAuthorizeToken(key: Constants.authorizeResponseKey), let timeInterval  = UserDefaultsHelper.getStringFromUserDefaults(key: Constants.timeofAuthorizationKey)
+            
+        {
+            let expireAuth = Double(auth.expiresIn!)!
+            
+            let savedTimeInterval = Double(timeInterval)!
+            let currnetTimeInterval = Date.timeIntervalSinceReferenceDate
+            
+            
+            if currnetTimeInterval - savedTimeInterval < (expireAuth-100)
+            {
+                return true
+            }
+            else
+            {
+                return false
+            }
+        }
+         return false
+    }
+    
+    func checkAuthorization()
+    {
+        
+        if self.checkTokenValidation()
+        {
+            self.authorizationViewModelDelegate?.finishRequestingAccessToken()
+        }
+        else
+        {
+            getAuthorizationMusicToken()
+        }
+    }
+    
     
     func cancelMusicDatatRequest() {
         backendManager.cancelMusicDatatRequest()
     }
-    
-   
-    private func showAlertMessage(message:String)
-    {
-        let alert = UIAlertController(title: Constants.error.localized, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: Constants.retry.localized, style: UIAlertAction.Style.default, handler: { (action) in
-            self.getAuthorizationMusicToken()
-        }))
-        alert.addAction(UIAlertAction(title: Constants.cancel.localized, style: UIAlertAction.Style.cancel, handler: { (action) in
-            self.cancelMusicDatatRequest()
-        }))
-        
-        //musicViewControllerDelegate?.showAlert(alert: alert)
-    }
-    
-    private func showNoInternetConnection()
-        
-    {
-        let alert = UIAlertController(title: Constants.warning.localized, message: Constants.INTERNET_CONNECTION.localized, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: Constants.ok.localized, style: UIAlertAction.Style.default, handler: { (action) in
-            //self.stopAllLoaders()
-        }))
-        
-        //musicViewControllerDelegate?.showAlert(alert: alert)
-    }
 
-    
 }
 // MARK: Music request delegate
 
@@ -82,21 +90,24 @@ extension AuthorizationViewModel:AuthorizationMusicRequestDelegate
 
     func requestWillSend() {
         
-        
     }
 
     func requestSucceeded(data: AuthorizationToken?) {
-        let defaults = UserDefaults.standard
-        defaults.set(codable: data, forKey: "Test")
-        
-       let token = defaults.codable(AuthorizationToken.self, forKey: "Test")
-        print(token)
-        
+        if let auth = data
+        {
+            UserDefaultsHelper.setAuthorizeToken(key: Constants.authorizeResponseKey, value: auth)
+
+            let timeInterval = String(Date.timeIntervalSinceReferenceDate)
+            UserDefaultsHelper.saveStringData(value: timeInterval, key: Constants.timeofAuthorizationKey)
+            self.authorizationViewModelDelegate?.finishRequestingAccessToken()
+            
+            
+        }
     }
 
     func requestFailed(error:ErrorModel?) {
         
-        
+        self.getAuthorizationMusicToken()
     }
 
 }

@@ -7,23 +7,29 @@
 //
 import Foundation
 
-extension UserDefaults {
+class UserDefaultsHelper {
     
-    func set<T: Encodable>(codable: T, forKey key: String) {
-        let encoder = JSONEncoder()
-        do {
-            let data = try encoder.encode(codable)
-            let jsonString = String(data: data, encoding: .utf8)!
-            self.set(jsonString, forKey: key)
-        } catch {
-            print("Saving \"\(key)\" failed: \(error)")
-        }
+    static let defaults = UserDefaults.standard
+    
+    class func saveStringData(value : String , key : String){
+        defaults.set(value  , forKey: key)
     }
     
-    func codable<T: Decodable>(_ codable: T.Type, forKey key: String) -> T? {
-        guard let jsonString = self.string(forKey: key) else { return nil }
-        guard let data = jsonString.data(using: .utf8) else { return nil }
-        let decoder = JSONDecoder()
-        return try? decoder.decode(codable, from: data)
+    class func getStringFromUserDefaults(key : String)->String?{
+        return defaults.string(forKey: key)
+    }
+    
+    class func deleteStringFromUserDefaults(key:String){
+        defaults.removeObject(forKey: key)
+    }
+    
+    class func getAuthorizeToken(key : String)->AuthorizationToken?
+    {
+        return defaults.codable(AuthorizationToken.self, forKey: key)
+    }
+    
+    class func setAuthorizeToken(key : String, value:AuthorizationToken)
+    {
+         defaults.set(codable: value, forKey: key)
     }
 }

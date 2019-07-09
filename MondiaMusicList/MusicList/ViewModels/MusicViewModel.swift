@@ -19,6 +19,7 @@ class MusicViewModel: NSObject {
     //
     //MARK: Parameters
     //
+    var authorizationViewModel : AuthorizationViewModel?
     lazy private var backendManager = MusicBackendManager()
     public private(set) var allMusicArray: NSMutableArray = []
     weak var musicViewControllerDelegate:MusicViewControllerDelegate?
@@ -29,6 +30,7 @@ class MusicViewModel: NSObject {
     //
     override init() {
         super.init()
+        authorizationViewModel = AuthorizationViewModel.init(delegate: self)
     }
     convenience init(delegate:MusicViewControllerDelegate) {
         self.init()
@@ -39,11 +41,19 @@ class MusicViewModel: NSObject {
     //MARK: Network Request
     //
     public func getMusicData() {
+        
         if Reachability.isConnectedToNetwork()
         {
             if !self.searchText.isEmpty
             {
-                backendManager.getMusic(delegate: self, searchBy: self.searchText)
+                if (self.authorizationViewModel?.checkTokenValidation())!
+                {
+                    backendManager.getMusic(delegate: self, searchBy: self.searchText)
+                }
+                else
+                {
+                    self.authorizationViewModel?.getAuthorizationMusicToken()
+                }
             }
         }
         else
@@ -132,5 +142,13 @@ extension MusicViewModel:MusicRequestDelegate
         showAlertMessage(message: (error?.message)!)
     
     }
+    
+}
+extension MusicViewModel:AuthorizationViewModelDelegate
+{
+    func finishRequestingAccessToken() {
+        self.getMusicData()
+    }
+    
     
 }
